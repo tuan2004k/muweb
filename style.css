@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-container {
+    position: relative;
+    color: rgb(223, 214, 213);
+    height: 650px;
+    margin: 0em;
+
+}
+
+.control {
+    display: flex;
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #7f030f;
+    padding: 1em 2em;
+    width: 96%;
+    z-index: 100;
+    top: 0;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.menu .nav-team {
+    padding-left: 1em;
+}
+
+.menu {
+    text-shadow: 0 0 12px #f60808;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.option {
+    display: flex;
+    float: right;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.header-language {
+    background: none;
+    color: rgb(223, 214, 213);
+    border: none;
+    background-color: #7f030f;
+    text-shadow: 0 0 12px #f60808;
+
+
+}
+
+.header-language option {
+    margin-left: 5px;
+    border: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+
+.header-language:hover {
+    cursor: pointer;
+    background-color: #7f030f;
+}
+
+.header-language a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header-team a {
+    padding: 16 0;
+}
+
+.header-log {
+    display: flex;
+    text-shadow: 0 0 12px #f60808;
+
+
+
+}
+
+.log-list {
+    padding: 0 1em;
+}
+
+.log-list+.log-list {
+    border-left: solid 5px rgb(223, 214, 213);
+}
+
+.nav-team::after,
+.log-list::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: rgb(223, 214, 213);
+    margin-top: 2px;
+    transform: scale(0);
+    transition: all 1s;
+
+
+}
+
+.nav-team:hover::after,
+.log-list:hover::after {
+    transform: scale(1);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-img {
+    margin: inherit;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#home {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: inherit;
+    margin-top: 40px;
+    align-items: center;
+    position: relative;
+
+}
+
+.nav-image {
+    width: 400%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 665px;
+
+
+
+}
+
+.image-items {
+    width: 25%;
+    transition: 1s;
+}
+
+.button-tranition {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+
+}
+
+.btn-hello {
+    width: 15px;
+    height: 15px;
+    border: solid rgb(255, 0, 0);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.btn-hello+.btn-hello {
+    margin-left: 2em;
+}
+
+.btn-hello:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.hello1 {
+    margin-left: 0;
+}
+
+.hello2 {
+    margin-left: -25%;
+}
+
+.hello3 {
+    margin-left: -50%;
+}
+
+.hello4 {
+    margin-left: -75%;
+}
+
+.title {
+    font-size: 60px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 0 0 5px #7a7777;
+
+}
+
+#first-team {
+    position: relative;
+    width: 66.66%;
+    margin: 0 auto;
+}
+
+.title::after {
+    display: block;
+    content: "";
+    height: 10px;
+    width: 272px;
+    background-color: red;
+    margin: auto;
+
+}
+
+.sub-role {
+    display: flex;
+    /* width: inherit; */
+    justify-content: space-evenly;
+
+}
+
+.team-img {
+    width: 200px;
+    transition: 2s;
+}
+
+.role-btn {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 20%;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px #7a7777;
+}
+
+.role-btn:hover {
+    cursor: pointer;
+}
+
+.role-name {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: black;
+    border-bottom: solid rgb(216, 216, 216) 1px;
+    margin: 20px;
+}
+
+.role-info {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+}
+
+.role-number {
+    font-size: 40px;
+    color: #f60808;
+    text-shadow: 0 0 8px #ffffff;
+}
+
+.role-names {
+    margin-right: 100px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    color: #f3e5e5;
+}
+
+.role-names::after {
+    /* content: "";
+    display: block;
+    height: 3px;
+    transform: scale(0);
+    transition:  0.9s;
+    background-color: #fe0000;
+    margin-top: 2px; */
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 20px;
+    background-color: red;
+    transition: 2s;
+}
+
+.role-names:hover::after {
+    transform: scale(1);
+}
+
+.role-btn:hover .team-img {
+    transform: scale(1.3);
+}
+
+.role-btn:hover .role-names::after {
+    width: 50px;
+}
+
+.role-name {
+    font-size: 40px;
+    text-shadow: 0 0 5px #7a7777;
+}
+
+.sub-role-mid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-role-mid img:last-child {
+    margin-bottom: 10px;
+}
+
+.team-img[src="./dreamchar/antony compa.jpg"] {
+    width: 230px;
+    transform: 2s;
+}
+
+.team-img[src="./dreamchar/lisandro.jpg"] {
+    width: 230px;
+    transform: 2s;
+}
+
+.team-img[src="./dreamchar/marcus-rashford.jpg"] {
+    width: 220px;
+    transform: 2s;
+}
+
+.sub-role-defend {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.sub-role-goalkeep {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.sub-reserve {
+    display: inline-block;
+   
+
+}
+
+.reserve-img {
+    width: 150px;
+
+
+}
+
+.team-reserve {
+    overflow: auto;
+    float: auto;
+    padding: 20px;
+    /* border: 5px solid #7a7777; */
+    /* background-color: #7a7777; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.letter {
+    /* border-bottom: 2px solid #f60808; */
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 0 0 5px #000;
+
+}
+
+.letter::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 210px;
+    background-color: #f60808;
+    margin: auto;
+}
+
+.reserve-btn {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20%;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px #7a7777;
+    
+}
+
+.reserve-info {
+    position: absolute;
+    
+    left: 5px;
+    width: 10%;
+    bottom: 10%;
+    text-align: center;
+    color: rgb(233, 217, 217);
+    z-index: 1;
+    padding-top: 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.reserve-names {
+    color: #e8e6e6;
+    font-size: 12px;
+    /* margin-right: 30px; */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #cdc0c0;
+    /* margin-top:10px; */
+}
+.reserve-names::after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 70px;
+    background-color: #95ebebd8;
+    
+}
+
+.reserve-number {
+    color: #e50404;
+    font-size: 32px;
+    text-shadow: 0 0 8px #ffffff;
+
+}
