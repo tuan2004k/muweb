@@ -110,9 +110,6 @@ select:focus {
 .header-log {
     display: flex;
     text-shadow: 0 0 12px #f60808;
-
-
-
 }
 
 .log-list {
@@ -356,6 +353,7 @@ body {
 .team-img[src="./dreamchar/antony compa.jpg"] {
     width: 230px;
     transform: 2s;
+ 
 }
 
 .team-img[src="./dreamchar/lisandro.jpg"] {
@@ -402,6 +400,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
    
 }
 
@@ -449,7 +449,9 @@ body {
     margin-left: 5px;
     margin-bottom: 10px;
 }
-
+.substitute-player{
+    width: 100%;
+}
 .reserve-names {
     color: #e8e6e6;
     font-size: 12px;
@@ -467,9 +469,85 @@ body {
     
 }
 
+
 .reserve-number {
     color: #e50404;
     font-size: 32px;
     text-shadow: 0 0 8px #ffffff;
 
 }
+.nav-coach{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.embrace-coach{
+    display: flex; 
+    padding-top: 3em;
+    justify-content: center;
+    background-color: #222020;
+
+
+}
+.coach-tenhag{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.frontpager{
+    font-size: 60px; 
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+   
+}
+.frontpager::after{
+    display: block;
+    content: "";
+    height: 10px;
+    width: 77%;
+    background-color: #f60808;
+}
+
+
+.name-coach{
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+}
+.say-coach{
+    font-size: 24px;
+    text-transform: lowercase;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: none;
+}
+.say-coach::first-letter{
+    text-transform: uppercase;
+}
+.img-coach img{
+    width: 100%;
+    align-self: flex-end;
+}
+.statistical-coach{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+.maches,.wins,.cup{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-shadow:  0 0 3px red;
+}
+
+.statistical-coach .number-maches,.number-win,.number-cup{
+    display: block;
+    text-shadow: none;
+}    
