@@ -611,7 +611,7 @@ body {
 
 .manager-inf {
     width: 25%;
-    padding: 10px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     color: #ffffff;
@@ -622,13 +622,13 @@ body {
 }
 
 .profile {
-    font-size: 24px;
-    color: #e50404;
+    font-size: 30px;
+    color: #db5806;
     text-shadow: 0 2px 2px #fff;
 }
 
 .profile-content {
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     color: #dfd6d5;
     text-shadow: 0 0 10px #e8e6e6;
@@ -655,9 +655,10 @@ body {
 }
 
 .items-caption {
-    color: #dbd1d1;
-    font-size: 16px;
+    color: #db5806;
+    font-size: 20px;
     font-style: italic;
+    font-weight: bolder;
 }
 
 .img-nati {
