@@ -353,7 +353,7 @@ body {
 .team-img[src="./dreamchar/antony compa.jpg"] {
     width: 230px;
     transform: 2s;
- 
+
 }
 
 .team-img[src="./dreamchar/lisandro.jpg"] {
@@ -365,6 +365,7 @@ body {
     width: 220px;
     transform: 2s;
 }
+
 
 .sub-role-defend {
     display: flex;
@@ -379,30 +380,18 @@ body {
 }
 
 .sub-reserve {
-    display: inline-block;
-   
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+
 
 }
 
 .reserve-img {
     width: 150px;
+    /* transition: 2s; */
 
 
-}
-
-.team-reserve {
-    overflow: auto;
-    float: auto;
-    padding: 20px;
-    /* border: 5px solid #7a7777; */
-    /* background-color: #7a7777; */
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-
-   
 }
 
 .letter {
@@ -429,16 +418,25 @@ body {
     height: 150px;
     background-color: black;
     border-radius: 20%;
-    margin: 1em;
+    /* margin: 2em; */
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px #7a7777;
-    
+
+    /* display: flex;
+    justify-content: space-evenly;
+    width: inherit; */
+
+
 }
+.reserve-btnZ:hover{
+    cursor: pointer;
+}
+
 
 .reserve-info {
     position: absolute;
-    
+
     left: 5px;
     width: 10%;
     bottom: 10%;
@@ -449,9 +447,23 @@ body {
     margin-left: 5px;
     margin-bottom: 10px;
 }
-.substitute-player{
-    width: 100%;
+
+#substitute-player {
+    position: relative;
+    width: 55%;
+    margin: 0 auto; 
+    background-color: #f7f5f5;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #211f1f;
+
+    /* width: 66,66%; */
+
+    /* width: inherit; */
+
+    /* position: relative; */
 }
+
 .reserve-names {
     color: #e8e6e6;
     font-size: 12px;
@@ -460,94 +472,134 @@ body {
     color: #cdc0c0;
     /* margin-top:10px; */
 }
-.reserve-names::after{
+
+.reserve-names::after {
     display: block;
     content: "";
     height: 3px;
     width: 70px;
     background-color: #95ebebd8;
-    
+
 }
 
 
 .reserve-number {
     color: #e50404;
-    font-size: 32px;
+    font-size: 30px;
     text-shadow: 0 0 8px #ffffff;
 
 }
-.nav-coach{
+.sub-reserve-1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px 40px 40px;
+}
+
+.reserve-btn-1{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20%;
+    /* margin: 2em; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px #7a7777;
+}
+.reserve-btn-1:hover{
+    cursor: pointer;
+}
+#coach{
+    padding-top: 40px;
+    width: 100%;
+}
+.nav-coach {
     width: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
+
 }
-.embrace-coach{
-    display: flex; 
+
+.embrace-coach {
+    display: flex;
     padding-top: 3em;
     justify-content: center;
     background-color: #222020;
 
 
 }
-.coach-tenhag{
+
+.coach-tenhag {
     display: flex;
     justify-content: center;
-   
-    
+
+
 }
 
-.frontpager{
-    font-size: 60px; 
+.frontpager {
+    font-size: 60px;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 5px #fff;
-   
+
 }
-.frontpager::after{
+
+.frontpager::after {
     display: block;
     content: "";
     height: 10px;
-    width: 77%;
+    width: 81%;
     background-color: #f60808;
 }
 
 
-.name-coach{
+.name-coach {
     font-size: 26px;
     font-weight: 500;
     margin-left: 10px;
     color: #fff;
     text-shadow: 0 0 3px #fff;
 }
-.say-coach{
+
+.say-coach {
     font-size: 20px;
     text-transform: lowercase;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: none;
 }
-.say-coach::first-letter{
+
+.say-coach::first-letter {
     text-transform: uppercase;
 }
-.img-coach img{
+
+.img-coach img {
     width: 100%;
+    height: 100%;
     align-self: flex-end;
 }
-.statistical-coach{
+
+.statistical-coach {
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
 }
-.maches,.wins,.cup{
-    margin-bottom: 50px;
+
+.maches,
+.wins,
+.cup,
+.loses {
+    margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 20px;
-    text-shadow:  0 0 3px red;
+    font-size: 16px;
+    text-shadow: 0 0 3px red;
 }
 
-.statistical-coach .number-maches,.number-win,.number-cup{
+.statistical-coach .number-maches,
+.number-win,
+.number-cup ,
+.number-lose {
     display: block;
     text-shadow: none;
-}    
+}
