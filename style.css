@@ -550,15 +550,15 @@ body {
     font-size: 60px;
     font-weight: bold;
     color: #db5806;
-    text-shadow: 2px 2px 5px #d98806;
+    /* text-shadow: 2px 2px 5px #d98806; */
 
 }
 
 .frontpager::after {
     display: block;
     content: "";
-    height: 10px;
-    width: 81%;
+    height: 8px;
+    width: 63%;
     background-color: #fff;
 }
 
