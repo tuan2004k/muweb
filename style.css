@@ -42,9 +42,9 @@ a {
     padding: 1em 1em;
     width: 99%;
     z-index: 100;
-    top: 0; 
-  
-   
+    top: 0;
+
+
 }
 
 
@@ -64,6 +64,15 @@ a {
     display: flex;
     align-items: center;
     padding-left: 1em;
+}
+
+.menu-wrappper {
+    display: flex;
+    justify-content: center;
+}
+.menu-team {
+    display: flex;
+    justify-content: center;
 }
 
 .option {
@@ -386,7 +395,7 @@ body {
 .sub-reserve {
     display: flex;
     justify-content: space-evenly;
-    padding:40px 40px 0 40px;
+    padding: 40px;
 
 
 }
@@ -568,10 +577,10 @@ body {
 .name-coach {
     font-size: 40px;
     font-weight: 500;
- 
+
     color: #fff;
     text-shadow: 0 0 3px #fff;
-    font-family: cursive;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .say-coach {
@@ -588,7 +597,7 @@ body {
 }
 
 .img-coach img {
-    width:102%;
+    width: 102%;
     height: 105%;
     align-self: flex-end;
 }
@@ -640,7 +649,7 @@ body {
     font-style: italic;
     color: #dfd6d5;
     text-shadow: 0 0 10px #e8e6e6;
-    font-family:  Verdana,'Geneva', Tahoma, sans-serif;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 
 }
 
@@ -662,9 +671,9 @@ body {
     font-size: 24px;
     color: #eee;
     text-shadow: 0 0 5px #cdc0c0;
-    font-family:  Verdana,'Geneva', Tahoma, sans-serif;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 
-   
+
 }
 
 .items-caption {
@@ -678,9 +687,10 @@ body {
         1px -1px 0 #ffffff,
         -1px 1px 0 #ffffff,
         1px 1px 0 #ffffff;
-        text-decoration: underline;
+    text-decoration: underline;
 
 }
+
 /* 
 .img-nati {
     position: relative;
@@ -691,7 +701,7 @@ body {
     text-transform: lowercase;
     font-size: 24px;
     text-shadow: 0 0 5px #cdc0c0;
-    font-family:  Verdana,'Geneva', Tahoma, sans-serif;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 
 }
 
@@ -699,9 +709,7 @@ body {
     text-transform: uppercase;
 }
 
-.items-halan {
-    /* text-transform: capitalize; */
-}
+
 
 .items-date {
     font-size: 24px;
@@ -709,11 +717,15 @@ body {
     margin: 16px;
     /* text-transform: cap
     italize;  */
-    font-family:  Verdana,'Geneva', Tahoma, sans-serif;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 }
+#menu-mobile{
+    display:none;
+}
+
 /* mobile */
-@media only screen and (max-width:740px){
-  
+@media only screen and (max-width:740px) {
+
     /* .menu-team{
         overflow: hidden;
     }
@@ -725,130 +737,151 @@ body {
         display: block;
     }
      */
-     .menu-team {
+    .menu-team {
         position: fixed;
         top: 70px;
         left: 40px;
         width: 30%;
         background-color: #7f030f;
-      }
-     .menu {
+    }
+
+    .menu {
         display: none;
-      }
-      
-      /* Hiển thị các mục menu khi có lớp "show-menu" */
-      .show-menu .menu {
+    }
+
+    /* Hiển thị các mục menu khi có lớp "show-menu" */
+    .show-menu .menu {
         display: block;
-      }
-      
-      /* Định dạng phần tử chứa các mục menu */
-      .menu-wrapper {
+    }
+
+    /* Định dạng phần tử chứa các mục menu */
+    .menu-wrapper {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      /* Định dạng các mục menu */
-      .menu a {
+    }
+
+    /* Định dạng các mục menu */
+    .menu a {
         display: block;
         padding: 10px;
         color: #333;
         text-decoration: none;
         font-size: 16px;
-      }
-      
-      .menu a:hover {
-        background-color: #f5f5f5;
-      }
     }
-    .sub-role, .sub-role-defend, .sub-role-mid, .sub-role-goalkeep, .sub-reserve,.sub-reserve-1{
+
+    .menu a:hover {
+        background-color: #f5f5f5;
+    }
+
+    .sub-role,
+    .sub-role-defend,
+    .sub-role-mid,
+    .sub-role-goalkeep,
+    .sub-reserve,
+    .sub-reserve-1 {
         flex-direction: column;
         align-items: center;
     }
-    .reserve-btn{
+
+    .reserve-btn {
         margin-bottom: 70px;
     }
-    .reserve-btn-1{
+
+    .reserve-btn-1 {
         margin-bottom: 70px;
     }
-    .role-name{
+
+    .role-name {
         align-items: center;
     }
-    .coach-tenhag{
+
+    .coach-tenhag {
         flex-direction: column;
         width: 70%;
     }
-    .name-coach{
+
+    .name-coach {
         margin-left: 35px;
-        
+
     }
-    .nav-coach{
-      width: 100%;
-      align-items: center;
-     padding-left: 0px;
+
+    .nav-coach {
+        width: 100%;
+        align-items: center;
+        padding-left: 0px;
     }
-    .frontpager::after{
+
+    .frontpager::after {
         width: 100%;
         margin-bottom: 20px;
     }
-    .say-coach{
+
+    .say-coach {
         padding-top: 20px;
         padding-left: 10px;
     }
-    .img-coach img{
+
+    .img-coach img {
         width: 280px;
         height: 200px;
-        padding-top: 20px;     
+        padding-top: 20px;
     }
-    .manager-inf{
+
+    .manager-inf {
         padding: 0px;
     }
-    .profile-content{
+
+    .profile-content {
         width: 200px;
         height: 100%;
     }
-    .prof{
+
+    .prof {
         width: 200px;
         display: flex;
         flex-direction: column;
-       margin-left: 40px;
+        margin-left: 40px;
     }
+
     .profile {
         width: 120px;
         padding-left: 30px;
     }
-    .information{
-       padding-left: 40px;
+
+    .information {
+        padding-left: 40px;
         flex-direction: column;
         display: flex;
         padding: 0px;
-        
+
     }
-    .sub-info{
+
+    .sub-info {
         width: 200px;
         padding-left: 50px;
-        
+
     }
-    .items-caption{
+
+    .items-caption {
         padding-left: 30px;
     }
+
     .items-position {
         margin-left: 35px;
     }
-    .items-halan{
+
+    .items-halan {
         margin-left: -5px;
     }
-    .items-date{
+
+    .items-date {
         margin-left: 35px;
     }
-
-
 }
+
 /* tablet */
-@media  only screen and(min-width:740px) and(max-width:1024px) {
-    
-}
-    
+@media only screen and(min-width:740px) and(max-width:1024px) {}
