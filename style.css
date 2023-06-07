@@ -727,18 +727,6 @@ body {
 
 /* mobile */
 @media only screen and (max-width:740px) {
-
-    /* .menu-team{
-        overflow: hidden;
-    }
-    .menu{
-        display: block;
-        
-    }
-    .menu-team, .menu-mobile-btn{
-        display: block;
-    }
-     */
     #menu-mobile {
         display: inline-block;
     }
