@@ -713,15 +713,56 @@ body {
 }
 /* mobile */
 @media only screen and (max-width:740px){
-    .header{
-        flex-direction: row;
+  
+    /* .menu-team{
         overflow: hidden;
-    }
-    .nav-team{
-        font-size: 16px;
     }
     .menu{
         display: block;
+        
+    }
+    .menu-team, .menu-mobile-btn{
+        display: block;
+    }
+     */
+     .menu-team {
+        position: fixed;
+        top: 70px;
+        left: 40px;
+        width: 30%;
+        background-color: #7f030f;
+      }
+     .menu {
+        display: none;
+      }
+      
+      /* Hiển thị các mục menu khi có lớp "show-menu" */
+      .show-menu .menu {
+        display: block;
+      }
+      
+      /* Định dạng phần tử chứa các mục menu */
+      .menu-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Định dạng các mục menu */
+      .menu a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      
+      .menu a:hover {
+        background-color: #f5f5f5;
+      }
     }
     .sub-role, .sub-role-defend, .sub-role-mid, .sub-role-goalkeep, .sub-reserve,.sub-reserve-1{
         flex-direction: column;
