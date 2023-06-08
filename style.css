@@ -250,7 +250,7 @@ body {
 
 }
 
-#team-start{
+#team-start {
     position: relative;
     width: 66.66%;
     margin: 0 auto;
@@ -464,7 +464,7 @@ body {
     margin-bottom: 10px;
 }
 
-#reserve-team{
+#reserve-team {
     position: relative;
     width: 55%;
     margin: 0 auto;
@@ -549,9 +549,7 @@ body {
     height: 700px;
     justify-content: center;
     background-color: #222020;
-    padding: 20px 
-
-
+    padding: 20px
 }
 
 .coach-tenhag {
@@ -602,13 +600,14 @@ body {
     text-transform: uppercase;
 }
 
-.say-coach i{
+.say-coach i {
     text-transform: capitalize;
-    
+
 }
+
 .img-coach img {
     width: 160%;
-    height: 105%;
+    height: 102%;
     align-self: flex-end;
 }
 
@@ -652,7 +651,7 @@ body {
     font-size: 30px;
     color: #db5806;
     text-shadow: 0 2px 2px #fff;
-   
+
 }
 
 .profile-content {
@@ -734,6 +733,130 @@ body {
 #menu-mobile {
     display: none;
 }
+
+#jersay {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.jersey-total {
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    padding: 40px;
+}
+
+.jersey-official {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 150px;
+
+}
+
+.jersey-official img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.jersey-training {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 150px;
+}
+
+.jersey-training img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.jersey-accessory img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.name-product {
+    text-align: center;
+    color: #333;
+    font-size: 60px;
+    margin: 20px 0 100px 0;
+}
+
+.jersey-accessory {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jer-knot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.jer-knot p {
+    text-align: center;
+    color: #000;
+
+    
+}
+
+.jer-btn {
+    margin: auto;
+    background-color: red;
+    border: none;
+    box-shadow: 0 3px 5px #636161;
+    color: #FFF;
+    border-radius: 5px;
+
+}
+.jer-btn:hover{
+    background-color: #7a7777;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.jer-knot-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.jer-knot-1 p {
+    text-align: center;
+    color: #000;
+}
+
+
+
+.jer-knot-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.jer-knot-2 p {
+    text-align: center;
+    color: #000;
+
+}
+
+.jersey-accessory img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 /* mobile */
 @media only screen and (max-width:740px) {
@@ -828,9 +951,10 @@ body {
         padding-top: 20px;
         padding-left: 10px;
     }
-    .say-coach i{
+
+    .say-coach i {
         text-transform: capitalize;
-        
+
     }
 
     .img-coach {
@@ -855,18 +979,18 @@ body {
         width: 200px;
         display: flex;
         flex-direction: column;
-        
+
         align-items: center;
-        
+
     }
 
     .profile {
         width: 120px;
-       
+
     }
 
     .information {
-      
+
         flex-direction: column;
         display: flex;
         padding: 0px;
@@ -875,28 +999,64 @@ body {
 
     .sub-info {
         width: 100%;
-     
+
 
     }
 
     .items-halan {
         margin-left: -5px;
-        justify-content:start;
+        justify-content: start;
     }
 
-    
-    #coach{
+
+    #coach {
         height: 100%;
     }
-    .coach-tenhag,.embrace-coach{
+
+    .embrace-coach {
+        padding: 0%;
+    }
+
+    .coach-tenhag,
+    .embrace-coach {
         height: 100%;
     }
-    .img-coach img{
+
+    .img-coach img {
         width: 100%;
         height: 100%;
     }
+    #jersay{
+        padding-top: 0%;
 
+    }
+    .jersey-official{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+   .jer-knot{
+    padding-bottom: 100px;
+   }
+  
+   .jersey-training{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+   }
+   .jer-knot-1{
+    padding-bottom: 100px;
+   }
+   .jersey-accessory{
+    display:flex ;
+    flex-direction: column;
     
+   }
+   .jer-knot-2{
+    padding-bottom: 100px;
+   }
+
+
 }
 
 /* tablet */
