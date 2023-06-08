@@ -7,6 +7,7 @@ html {
     box-sizing: inherit;
     text-transform: uppercase;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -597,6 +598,10 @@ body {
     text-transform: uppercase;
 }
 
+.say-coach i{
+    text-transform: capitalize;
+    
+}
 .img-coach img {
     width: 102%;
     height: 105%;
@@ -799,7 +804,7 @@ body {
     }
 
     .name-coach {
-        margin-left: 35px;
+        margin: 10px 0 10px 35px;
 
     }
 
@@ -817,6 +822,10 @@ body {
     .say-coach {
         padding-top: 20px;
         padding-left: 10px;
+    }
+    .say-coach i{
+        text-transform: capitalize;
+        
     }
 
     .img-coach {
@@ -842,6 +851,8 @@ body {
         display: flex;
         flex-direction: column;
         
+        align-items: center;
+        
     }
 
     .profile {
@@ -858,17 +869,18 @@ body {
     }
 
     .sub-info {
-        width: 200px;
+        width: 100%;
      
 
     }
 
     .items-halan {
         margin-left: -5px;
+        justify-content:start;
     }
 
     .items-date {
-        margin-left: 35px;
+      
     }
 }
 
