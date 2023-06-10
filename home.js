@@ -21,6 +21,7 @@ first.classList.remove('hello4');
 first.classList.remove('hello2');
 first.classList.remove('hello1');
 };
+
 const menuBtn = document.querySelector(".menu-mobile-btn");
 const menuWrapper = document.querySelector(".menu-wrappper");
 
@@ -28,3 +29,4 @@ menuBtn.addEventListener("click", function () {
   menuWrapper.classList.toggle("show-menu");
   menuBtn.classList.toggle("fa-solid fa-bars");
 });
+

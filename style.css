@@ -23,7 +23,7 @@ a {
 .content-container {
     position: relative;
     color: rgb(223, 214, 213);
-    height: 650px;
+    height: 1050px;
     margin: 0em;
 
 }
@@ -733,13 +733,14 @@ body {
 #menu-mobile {
     display: none;
 }
+.menu-mobile-btn:hover{
+    cursor: pointer;
+}
 
-#jersay {
+#product{
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .jersey-total {
@@ -854,7 +855,9 @@ body {
     width: 100%;
     height: 100%;
 }
-
+#donors{
+    width: inherit;
+}
 
 
 
@@ -866,7 +869,7 @@ body {
 
     .menu-team {
         position: fixed;
-        top: 70px;
+        top: 76.5px;
         left: 40px;
         width: 30%;
         background-color: #7f030f;
@@ -874,14 +877,15 @@ body {
 
     .menu {
         display: none;
+        padding-left: 0;
     }
 
-    /* Hiển thị các mục menu khi có lớp "show-menu" */
+   
     .show-menu .menu {
         display: block;
     }
 
-    /* Định dạng phần tử chứa các mục menu */
+    
     .menu-wrapper {
         position: absolute;
         top: 100%;
@@ -891,19 +895,20 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Định dạng các mục menu */
+    
     .menu a {
         display: block;
         padding: 10px;
-        color: #333;
+        color: #ffffff;
         text-decoration: none;
         font-size: 16px;
     }
 
     .menu a:hover {
         background-color: #f5f5f5;
+        color: #7f030f;
     }
-
+    
     .sub-role,
     .sub-role-defend,
     .sub-role-mid,
@@ -1026,7 +1031,7 @@ body {
         width: 100%;
         height: 100%;
     }
-    #jersay{
+    #product{
         padding-top: 0%;
 
     }
