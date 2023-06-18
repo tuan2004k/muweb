@@ -7,493 +7,514 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manchester United</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="./image/themify-icons/">
+
 
 
 </head>
 
 <body>
+   <form id="login-form">
 
-    <section class="content-container">
-        <div class="header">
-            <div class="control">
-                <div class="logo">
-                    <a href="">
-                        <img src="./image/logo.png" alt="">
-                    </a>
+        <div for="username">Tên đăng nhập:</div>
+        <input type="text" id="username" name="username" required>
 
-                </div>
-                <div class="menu-team">
-                    <div class="menu-wrappper">
-                        <div class="menu">
-                            <a href="#home" class="nav-team">MY UNITED</a>
-                            <a href="#team-start" class="nav-team">TEAM START</a>
-                            <a href="#reserve-team" class="nav-team">RESERVE TEAM</a>
-                            <a href="#coach" class="nav-team">COACH</a>
-                            <a href="#product" class="nav-team">PRODUCT</a>
-                        </div>
+        <div for="password">Mật khẩu:</div>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Đăng nhập</button>
+
+    </form>
+    <div class="content" style="display:none;"> 
+        <section class="content-container">
+
+            <div class="header">
+                <div class="control">
+                    <div class="logo">
+                        <a href="">
+                            <img src="./image/logo.png" alt="">
+                        </a>
+
                     </div>
+                    <div class="menu-team">
+                        <div class="menu-wrappper">
+                            <div class="menu">
+                                <a href="#home" class="nav-team">MY UNITED</a>
+                                <a href="#team-start" class="nav-team">TEAM START</a>
+                                <a href="#reserve-team" class="nav-team">RESERVE TEAM</a>
+                                <a href="#coach" class="nav-team">COACH</a>
+                                <a href="#product" class="nav-team">PRODUCT</a>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+
+                <div id="menu-mobile" class="menu-mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="option">
+                    <select class="header-language">
+                        <option class="">LANGUAGE</option>
+                        <option class="lan"> VietNam</option>
+                        <option class="lan">Chinese</option>
+                        <option class="lan">English</option>
+                    </select>
+                    <div class="header-log">
+                        <a href="" class="log-list">
+                            LOGIN
+                        </a>
+                        <a href="" class="log-list">SIGN UP</a>
+                    </div>
                 </div>
             </div>
+            <section class="start-img">
+                <main id="home">
+                    <div class="nav-image">
+                        <img src="./image/Manchester_United_Champions-European_Football_Club_HD_Wallpapers_2560x1600.jpg"
+                            alt="" class="image-items first ">
+                        <img src="./image/san_old_trafford_e81c5018eca44cc3be02ec9c5e5929de.jpg" alt=""
+                            class="image-items">
+                        <img src="./image/ronaldo_4.jpg" alt="" class="image-items">
+                        <img src="./image/38.jpg" alt="" class="image-items">
+                    </div>
+                    <div class="button-tranition">
+                        <div id="hello1" class="btn-hello" onclick="hello1()"></div>
+                        <div id="hello2" class="btn-hello" onclick="hello2()"></div>
+                        <div id="hello3" class="btn-hello" onclick="hello3()"></div>
+                        <div id="hello4" class="btn-hello" onclick="hello4()"></div>
 
-            <div id="menu-mobile" class="menu-mobile-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="option">
-                <select class="header-language">
-                    <option class="">LANGUAGE</option>
-                    <option class="lan"> VietNam</option>
-                    <option class="lan">Chinese</option>
-                    <option class="lan">English</option>
-                </select>
-                <div class="header-log">
-                    <a href="" class="log-list">
-                        LOGIN
-                    </a>
-                    <a href="" class="log-list">SIGN UP</a>
-                </div>
-            </div>
-        </div>
-        <section class="start-img">
-            <main id="home">
-                <div class="nav-image">
-                    <img src="./image/Manchester_United_Champions-European_Football_Club_HD_Wallpapers_2560x1600.jpg"
-                        alt="" class="image-items first ">
-                    <img src="./image/san_old_trafford_e81c5018eca44cc3be02ec9c5e5929de.jpg" alt="" class="image-items">
-                    <img src="./image/ronaldo_4.jpg" alt="" class="image-items">
-                    <img src="./image/38.jpg" alt="" class="image-items">
-                </div>
-                <div class="button-tranition">
-                    <div id="hello1" class="btn-hello" onclick="hello1()"></div>
-                    <div id="hello2" class="btn-hello" onclick="hello2()"></div>
-                    <div id="hello3" class="btn-hello" onclick="hello3()"></div>
-                    <div id="hello4" class="btn-hello" onclick="hello4()"></div>
+                    </div>
 
-                </div>
-
-            </main>
-            <main id="team-start">
-                <div class="title">
-                    FIRST TEAM
-                </div>
-                <div class="team-role">
-                    <div class="role-name">STRIKER</div>
-                    <div class="sub-role">
-                        <div class="role-btn">
-                            <img src="./dreamchar/marcus-rashford.jpg" alt="" class="team-img">
-                            <div class="role-info">
-                                <div class="role-number">10</div>
-                                <div class="role-names">MARCUS RASHFORD</div>
-                            </div>
-                        </div>
-                        <div class="role-btn">
-                            <img src="./dreamchar/ronaldo.jpg" alt="" class="team-img">
-                            <div class="role-info">
-                                <div class="role-number">7</div>
-                                <div class="role-names">CRISTIANO RONALDO</div>
-                            </div>
-                        </div>
-                        <div class="role-btn">
-                            <img src="./dreamchar/antony compa.jpg" alt="" class="team-img">
-                            <div class="role-info">
-                                <div class="role-number">21</div>
-                                <div class="role-names">ANTONY</div>
-                            </div>
-                        </div>
-
+                </main>
+                <main id="team-start">
+                    <div class="title">
+                        FIRST TEAM
                     </div>
                     <div class="team-role">
-                        <div class="role-name"> MIDFIELDER</div>
-                        <div class="sub-role-mid">
+                        <div class="role-name">STRIKER</div>
+                        <div class="sub-role">
                             <div class="role-btn">
-                                <img src="./dreamchar/eriksen.png" alt="" class="team-img">
+                                <img src="./dreamchar/marcus-rashford.jpg" alt="" class="team-img">
                                 <div class="role-info">
-                                    <div class="role-number">14</div>
-                                    <div class="role-names">CHRISTAN ERIKSEN</div>
+                                    <div class="role-number">10</div>
+                                    <div class="role-names">MARCUS RASHFORD</div>
                                 </div>
                             </div>
                             <div class="role-btn">
-                                <img src="./dreamchar/phúc du.jpg" alt="" class="team-img">
+                                <img src="./dreamchar/ronaldo.jpg" alt="" class="team-img">
                                 <div class="role-info">
-                                    <div class="role-number">18</div>
-                                    <div class="role-names">CASEMIRO</div>
+                                    <div class="role-number">7</div>
+                                    <div class="role-names">CRISTIANO RONALDO</div>
                                 </div>
                             </div>
                             <div class="role-btn">
-                                <img src="./dreamchar/fernandes.jpg" alt="" class="team-img">
+                                <img src="./dreamchar/antony compa.jpg" alt="" class="team-img">
                                 <div class="role-info">
-                                    <div class="role-number">8</div>
-                                    <div class="role-names">BRUNO FERNANDES</div>
+                                    <div class="role-number">21</div>
+                                    <div class="role-names">ANTONY</div>
                                 </div>
                             </div>
 
+                        </div>
+                        <div class="team-role">
+                            <div class="role-name"> MIDFIELDER</div>
+                            <div class="sub-role-mid">
+                                <div class="role-btn">
+                                    <img src="./dreamchar/eriksen.png" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">14</div>
+                                        <div class="role-names">CHRISTAN ERIKSEN</div>
+                                    </div>
+                                </div>
+                                <div class="role-btn">
+                                    <img src="./dreamchar/phúc du.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">18</div>
+                                        <div class="role-names">CASEMIRO</div>
+                                    </div>
+                                </div>
+                                <div class="role-btn">
+                                    <img src="./dreamchar/fernandes.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">8</div>
+                                        <div class="role-names">BRUNO FERNANDES</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="team-role">
+                            <div class="role-name"> DEFENDER</div>
+                            <div class="sub-role-defend">
+                                <div class="role-btn">
+                                    <img src="./dreamchar/luc so.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">23</div>
+                                        <div class="role-names">LUKE SHAW</div>
+                                    </div>
+                                </div>
+                                <div class="role-btn">
+                                    <img src="./dreamchar/lisandro.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">6</div>
+                                        <div class="role-names">LISANDRO MARTINEZ</div>
+                                    </div>
+                                </div>
+                                <div class="role-btn">
+                                    <img src="./dreamchar/varrane.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">19</div>
+                                        <div class="role-names">RAPHAEL VARANE</div>
+                                    </div>
+                                </div>
+                                <div class="role-btn">
+                                    <img src="./dreamchar/dalot.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">20</div>
+                                        <div class="role-names">DIEGO DALOT</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="team-role">
+                            <div class="role-name">GOALIE</div>
+                            <div class="sub-role-goalkeep">
+                                <div class="role-btn">
+                                    <img src="./dreamchar/de gea.jpg" alt="" class="team-img">
+                                    <div class="role-info">
+                                        <div class="role-number">1</div>
+                                        <div class="role-names">DAVID <b>DE GEA</b></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="team-role">
-                        <div class="role-name"> DEFENDER</div>
-                        <div class="sub-role-defend">
-                            <div class="role-btn">
-                                <img src="./dreamchar/luc so.jpg" alt="" class="team-img">
-                                <div class="role-info">
-                                    <div class="role-number">23</div>
-                                    <div class="role-names">LUKE SHAW</div>
-                                </div>
-                            </div>
-                            <div class="role-btn">
-                                <img src="./dreamchar/lisandro.jpg" alt="" class="team-img">
-                                <div class="role-info">
-                                    <div class="role-number">6</div>
-                                    <div class="role-names">LISANDRO MARTINEZ</div>
-                                </div>
-                            </div>
-                            <div class="role-btn">
-                                <img src="./dreamchar/varrane.jpg" alt="" class="team-img">
-                                <div class="role-info">
-                                    <div class="role-number">19</div>
-                                    <div class="role-names">RAPHAEL VARANE</div>
-                                </div>
-                            </div>
-                            <div class="role-btn">
-                                <img src="./dreamchar/dalot.jpg" alt="" class="team-img">
-                                <div class="role-info">
-                                    <div class="role-number">20</div>
-                                    <div class="role-names">DIEGO DALOT</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="team-role">
-                        <div class="role-name">GOALIE</div>
-                        <div class="sub-role-goalkeep">
-                            <div class="role-btn">
-                                <img src="./dreamchar/de gea.jpg" alt="" class="team-img">
-                                <div class="role-info">
-                                    <div class="role-number">1</div>
-                                    <div class="role-names">DAVID <b>DE GEA</b></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <main id="reserve-team">
-                <div class="team-reserve">
-                    <div class="letter">RESERVE TEAM</div>
-                    <div class="sub-reserve">
-                        <div class="reserve-btn">
-                            <img src="./dreamchar/ganacho.jpg" alt="" class="reserve-img">
-                            <div class="reserve-info">
-                                <div class="reserve-number">49</div>
-                                <div class="reserve-names">ALEJANDRO GARNACHO</div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="reserve-btn">
-                            <img src="./dreamchar/lindelof.jpg" alt="" class="reserve-img">
-                            <div class="reserve-info">
-                                <div class="reserve-number">2</div>
-                                <div class="reserve-names">VICTOR LINDELOF</div>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="reserve-btn">
-                            <img src="./dreamchar/aaron-wan-bissaka.jpg" alt="" class="reserve-img">
-                            <div class="reserve-info">
-                                <div class="reserve-number">29</div>
-                                <div class="reserve-names">WAN-BISSAKA</div>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="reserve-btn">
-                            <img src="./dreamchar/dean herdeson.jpg" alt="" class="reserve-img">
-                            <div class="reserve-info">
-                                <div class="reserve-number">34</div>
-                                <div class="reserve-names">DEAN HERDESON</div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="team-reserve-1">
-                        <div class="sub-reserve-1">
-                            <div class="reserve-btn-1">
-                                <img src="./dreamchar/fred.jpg" alt="" class="reserve-img">
+                </main>
+                <main id="reserve-team">
+                    <div class="team-reserve">
+                        <div class="letter">RESERVE TEAM</div>
+                        <div class="sub-reserve">
+                            <div class="reserve-btn">
+                                <img src="./dreamchar/ganacho.jpg" alt="" class="reserve-img">
                                 <div class="reserve-info">
-                                    <div class="reserve-number">17</div>
-                                    <div class="reserve-names">FRED</div>
+                                    <div class="reserve-number">49</div>
+                                    <div class="reserve-names">ALEJANDRO GARNACHO</div>
+
                                 </div>
 
                             </div>
 
-
-
-                            <div class="reserve-btn-1">
-                                <img src="./dreamchar/mctomynei.jpg" alt="" class="reserve-img">
+                            <div class="reserve-btn">
+                                <img src="./dreamchar/lindelof.jpg" alt="" class="reserve-img">
                                 <div class="reserve-info">
-                                    <div class="reserve-number">39</div>
-                                    <div class="reserve-names">SCOTT MCTOMINAY</div>
+                                    <div class="reserve-number">2</div>
+                                    <div class="reserve-names">VICTOR LINDELOF</div>
+
                                 </div>
 
                             </div>
 
-                            <div class="reserve-btn-1">
-                                <img src="./dreamchar/anthony-martial-2110110511.jpg" alt="" class="reserve-img">
+
+
+                            <div class="reserve-btn">
+                                <img src="./dreamchar/aaron-wan-bissaka.jpg" alt="" class="reserve-img">
                                 <div class="reserve-info">
-                                    <div class="reserve-number">9</div>
-                                    <div class="reserve-names">ANTHONY MARTIAL</div>
+                                    <div class="reserve-number">29</div>
+                                    <div class="reserve-names">WAN-BISSAKA</div>
+
                                 </div>
 
                             </div>
-                            <div class="reserve-btn-1">
-                                <img src="./dreamchar/malacia.jpg" alt="" class="reserve-img">
+
+
+
+                            <div class="reserve-btn">
+                                <img src="./dreamchar/dean herdeson.jpg" alt="" class="reserve-img">
                                 <div class="reserve-info">
-                                    <div class="reserve-number">12</div>
-                                    <div class="reserve-names">TYRELL MALACIA</div>
+                                    <div class="reserve-number">34</div>
+                                    <div class="reserve-names">DEAN HERDESON</div>
                                 </div>
 
                             </div>
                         </div>
 
+                        <div class="team-reserve-1">
+                            <div class="sub-reserve-1">
+                                <div class="reserve-btn-1">
+                                    <img src="./dreamchar/fred.jpg" alt="" class="reserve-img">
+                                    <div class="reserve-info">
+                                        <div class="reserve-number">17</div>
+                                        <div class="reserve-names">FRED</div>
+                                    </div>
 
+                                </div>
+
+
+
+                                <div class="reserve-btn-1">
+                                    <img src="./dreamchar/mctomynei.jpg" alt="" class="reserve-img">
+                                    <div class="reserve-info">
+                                        <div class="reserve-number">39</div>
+                                        <div class="reserve-names">SCOTT MCTOMINAY</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="reserve-btn-1">
+                                    <img src="./dreamchar/anthony-martial-2110110511.jpg" alt="" class="reserve-img">
+                                    <div class="reserve-info">
+                                        <div class="reserve-number">9</div>
+                                        <div class="reserve-names">ANTHONY MARTIAL</div>
+                                    </div>
+
+                                </div>
+                                <div class="reserve-btn-1">
+                                    <img src="./dreamchar/malacia.jpg" alt="" class="reserve-img">
+                                    <div class="reserve-info">
+                                        <div class="reserve-number">12</div>
+                                        <div class="reserve-names">TYRELL MALACIA</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                </main>
+                <main id="coach">
+
+                    <div class="embrace-coach">
+                        <div class="coach-tenhag">
+                            <div class="nav-coach">
+                                <div class="frontpager">COACH</div>
+                                <div class="name-coach">
+                                    ERIK TEN HAG
+                                </div>
+                                <div class="say-coach">
+
+                                    "I would love to see <i>Manchester United</i> back and challenge for the <i>premier
+                                        league</i> again,
+                                    because that's where the club wants to be."
+                                </div>
+                            </div>
+                            <div class="img-coach">
+                                <img src="./dreamchar/ten hag.png" alt="">
+                            </div>
+                            <div class="manager-inf">
+                                <div class="prof">
+                                    <!-- <div class="maches">
+                                        MACHES:
+                                        <span class="number-maches">140</span>
+                                    </div>
+                                    <div class="wins">
+                                        WINS:
+                                        <span class="number-win">70</span>
+                                    </div>
+                                    <div class="loses">
+                                        LOSE:
+                                        <span class="number-lose">0</span>
+                                    <div class="cup">
+                                        CUP:
+                                        <span class="number-cup">1</span>
+                                    </div> -->
+                                    <p class="profile">PROFILE</p>
+                                    <p class="profile-content">He is a former professional football player and coach
+                                        from
+                                        the Netherlands, currently the manager of the Premier League club Manchester
+                                        United.
+                                    </p>
+                                </div>
+                                <div class="information">
+                                    <div class="sub-info">
+                                        <p class="items-caption">
+                                            POSITION
+                                        </p>
+                                        <p class="items-position">
+                                            COACH
+                                        </p>
+                                    </div>
+
+                                    <div class="sub-info">
+                                        <p class="items-caption">
+                                            NATIONALITY
+                                        </p>
+                                        <p class="items-halan">
+                                            <img src="./image/nerthlan.png" alt="" class="img-nati">Netherlands
+                                        </p>
+                                    </div>
+                                    <div class="sub-info">
+                                        <p class="items-caption">
+                                            DATE OF BIRTH
+                                        </p>
+                                        <p class="items-date">
+                                            2 Feb 1970
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </main>
+                <main id="product">
+                    <div class="jersey-total">
+                        <div class="name-product">
+                            PRODUCCT
+                        </div>
+                        <div class="sub-jersey">
+
+                            <div class="jersey-official">
+                                <div class="jer-knot">
+                                    <img src="./dreamchar/áo đấu.jpg" alt="" class="img-jersey">
+                                    <p>60$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                                <div class="jer-knot">
+                                    <img src="./dreamchar/áo đấu 2.avif" alt="" class="img-jersey">
+                                    <p>60$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                                <div class="jer-knot">
+                                    <img src="./dreamchar/áo đấu 3.webp" alt="" class="img-jersey">
+                                    <p>60$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+
+                            </div>
+                            <div class="jersey-training">
+                                <div class="jer-knot-1">
+                                    <img src="./dreamchar/áo training.avif" alt="" class="img-jersey">
+                                    <p>50$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                                <div class="jer-knot-1">
+                                    <img src="./dreamchar/áo training 2.avif" alt="" class="img-jersey">
+                                    <p>50$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                                <div class="jer-knot-1">
+                                    <img src="./dreamchar/áo training 3.webp" alt="" class="img-jersey">
+                                    <p>50$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                            </div>
+                            <div class="jersey-accessory">
+                                <div class="jer-knot-2">
+                                    <img src="./dreamchar/mủ.webp" alt="" class="img-jersey">
+                                    <p>100$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                                <div class="jer-knot-2">
+                                    <img src="./dreamchar/kính mu.jpg" alt="" class="img-jersey">
+                                    <p>125$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                                <div class="jer-knot-2">
+                                    <img src="./dreamchar/giayf.webp" alt="" class="img-jersey">
+                                    <p>300$</p>
+                                    <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </main>
+                <main id="contact">
+                    <h2>contact</h2>
+                    <div class="theatre">theatre of Dreams</div>
+                    <div class="contact-nav">
+                        <div class="contact-list">
+                            <p><i class="fas fa-location-dot" style="color: #f40101;width: 30px;" class="contact-icon"
+                                    width="30px">
+                                </i>manchester, england</p>
+                            <p><i class="fas fa-phone-volume" style="color: #ff0000; width: 30px;" class="contact-icon"
+                                    width="30px">
+                                </i>+84325586629</p>
+
+                            <p><i class="fa-solid fa-envelope"
+                                    style="color: #ff0000; width: 30px;text-decoration: none;" class="contact-icon"
+                                    width="30px">
+                                </i>dautuan032004@gmail.com</p>
+                        </div>
+                        <div class="contact-input">
+                            <form action="">
+                                <div class="input-nav">
+                                    <div class="input-phone">
+                                        <input type="text" name="" placeholder="Number Phone" required
+                                            class="form-input">
+                                    </div>
+                                    <div class="input-email">
+                                        <input type="email" name="" placeholder="Email" required class="form-input">
+                                    </div>
+                                </div>
+
+                                <div class="input-name">
+                                    <input type="text" name="" placeholder="Name" required class="form-input">
+                                </div>
+                                <div class="btn">
+                                    <input class="btn-enter" style="width: 50px;height: 30px;" type="submit"
+                                        value="Enter">
+                                    </input>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </main>
+                <main id="footer">
+                    <div class="sponsor">
+                        <a href="https://tezos.com/"><img src="./dreamchar/tezot.png" alt="" class="sponsor-img"></a>
+                        <a href="https://dxc.com/uk/en"><img src="./dreamchar/technology.png" alt=""
+                                class="sponsor-img"></a>
+
+                        <a href="https://www.teamviewer.com/vi/"> <img src="./dreamchar/teamviewer.png" alt=""
+                                class="sponsor-img"></a>
+                        <a href="https://www.adidas.com/us"> <img src="./dreamchar/adidas.png" alt=""
+                                class="sponsor-img"></a>
+                        <a href="https://www.chevrolet.com/"><img src="./dreamchar/chaloter.png" alt=""
+                                class="sponsor-img"></a>
+                        <a href="https://www.aon.com/vietnam/en/default.jsp"><img src="./dreamchar/aon.png" alt=""
+                                class="sponsor-img"></a>
 
                     </div>
 
-
-
-            </main>
-            <main id="coach">
-
-                <div class="embrace-coach">
-                    <div class="coach-tenhag">
-                        <div class="nav-coach">
-                            <div class="frontpager">COACH</div>
-                            <div class="name-coach">
-                                ERIK TEN HAG
-                            </div>
-                            <div class="say-coach">
-
-                                "I would love to see <i>Manchester United</i> back and challenge for the <i>premier
-                                    league</i> again,
-                                because that's where the club wants to be."
-                            </div>
-                        </div>
-                        <div class="img-coach">
-                            <img src="./dreamchar/ten hag.png" alt="">
-                        </div>
-                        <div class="manager-inf">
-                            <div class="prof">
-                                <!-- <div class="maches">
-                                    MACHES:
-                                    <span class="number-maches">140</span>
-                                </div>
-                                <div class="wins">
-                                    WINS:
-                                    <span class="number-win">70</span>
-                                </div>
-                                <div class="loses">
-                                    LOSE:
-                                    <span class="number-lose">0</span>
-                                <div class="cup">
-                                    CUP:
-                                    <span class="number-cup">1</span>
-                                </div> -->
-                                <p class="profile">PROFILE</p>
-                                <p class="profile-content">He is a former professional football player and coach from
-                                    the Netherlands, currently the manager of the Premier League club Manchester United.
-                                </p>
-                            </div>
-                            <div class="information">
-                                <div class="sub-info">
-                                    <p class="items-caption">
-                                        POSITION
-                                    </p>
-                                    <p class="items-position">
-                                        COACH
-                                    </p>
-                                </div>
-
-                                <div class="sub-info">
-                                    <p class="items-caption">
-                                        NATIONALITY
-                                    </p>
-                                    <p class="items-halan">
-                                        <img src="./image/nerthlan.png" alt="" class="img-nati">Netherlands
-                                    </p>
-                                </div>
-                                <div class="sub-info">
-                                    <p class="items-caption">
-                                        DATE OF BIRTH
-                                    </p>
-                                    <p class="items-date">
-                                        2 Feb 1970
-
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-                    </div>
-                </div>
-            </main>
-            <main id="product">
-                <div class="jersey-total">
-                    <div class="name-product">
-                        PRODUCCT
-                    </div>
-                    <div class="sub-jersey">
-
-                        <div class="jersey-official">
-                            <div class="jer-knot">
-                                <img src="./dreamchar/áo đấu.jpg" alt="" class="img-jersey">
-                                <p>60$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                            <div class="jer-knot">
-                                <img src="./dreamchar/áo đấu 2.avif" alt="" class="img-jersey">
-                                <p>60$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                            <div class="jer-knot">
-                                <img src="./dreamchar/áo đấu 3.webp" alt="" class="img-jersey">
-                                <p>60$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-
-                        </div>
-                        <div class="jersey-training">
-                            <div class="jer-knot-1">
-                                <img src="./dreamchar/áo training.avif" alt="" class="img-jersey">
-                                <p>50$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                            <div class="jer-knot-1">
-                                <img src="./dreamchar/áo training 2.avif" alt="" class="img-jersey">
-                                <p>50$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                            <div class="jer-knot-1">
-                                <img src="./dreamchar/áo training 3.webp" alt="" class="img-jersey">
-                                <p>50$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                        </div>
-                        <div class="jersey-accessory">
-                            <div class="jer-knot-2">
-                                <img src="./dreamchar/mủ.webp" alt="" class="img-jersey">
-                                <p>100$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                            <div class="jer-knot-2">
-                                <img src="./dreamchar/kính mu.jpg" alt="" class="img-jersey">
-                                <p>125$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                            <div class="jer-knot-2">
-                                <img src="./dreamchar/giayf.webp" alt="" class="img-jersey">
-                                <p>300$</p>
-                                <button class="jer-btn" style="width: 150px; height: 40px;">BUY</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </main>
-            <main id="contact">
-                <h2>contact</h2>
-                <div class="theatre">theatre of Dreams</div>
-                <div class="contact-nav">
-                    <div class="contact-list">
-                        <p><i class="fas fa-location-dot" style="color: #f40101;width: 30px;" class="contact-icon"
-                                width="30px">
-                            </i>manchester, england</p>
-                        <p><i class="fas fa-phone-volume" style="color: #ff0000; width: 30px;" class="contact-icon"
-                                width="30px">
-                            </i>+84325586629</p>
-
-                        <p><i class="fa-solid fa-envelope" style="color: #ff0000; width: 30px;text-decoration: none;"
-                                class="contact-icon" width="30px">
-                            </i>dautuan032004@gmail.com</p>
-                    </div>
-                    <div class="contact-input">
-                        <form action="">
-                            <div class="input-nav">
-                                <div class="input-phone">
-                                    <input type="text" name="" placeholder="Number Phone" required class="form-input">
-                                </div>
-                                <div class="input-email">
-                                    <input type="email" name="" placeholder="Email" required class="form-input">
-                                </div>
-                            </div>
-
-                            <div class="input-name">
-                                <input type="text" name="" placeholder="Name" required class="form-input">
-                            </div>
-                            <div class="btn">
-                                <input class="btn-enter" style="width: 50px;height: 30px;" type="submit" value="Enter">
-                                </input>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </main>
-            <main id="footer">
-                <div class="sponsor">
-                    <a href="https://tezos.com/"><img src="./dreamchar/tezot.png" alt="" class="sponsor-img"></a>
-                    <a href="https://dxc.com/uk/en"><img src="./dreamchar/technology.png" alt=""
-                            class="sponsor-img"></a>
-
-                    <a href="https://www.teamviewer.com/vi/"> <img src="./dreamchar/teamviewer.png" alt=""
-                            class="sponsor-img"></a>
-                    <a href="https://www.adidas.com/us"> <img src="./dreamchar/adidas.png" alt=""
-                            class="sponsor-img"></a>
-                    <a href="https://www.chevrolet.com/"><img src="./dreamchar/chaloter.png" alt=""
-                            class="sponsor-img"></a>
-                    <a href="https://www.aon.com/vietnam/en/default.jsp"><img src="./dreamchar/aon.png" alt=""
-                            class="sponsor-img"></a>
-
-                </div>
-
-            </main>
-            <div class="network">
-                <i class="fab fa-facebook " style="font-size: 30px;color: #205eda;"></i>
-                <i class="fab fa-twitter " style="font-size: 30px; color: #0696fd;"></i>
-                <i class="fab fa-tiktok " style="font-size: 30px;color: black;"></i>
-                <i class="fab fa-youtube " style="font-size: 30px;color: red;"></i>
-            </div>>
-
-
-
+                </main>
+                <div class="network">
+                    <i class="fa-brands fa-facebook fa-spin fa-spin-reverse"
+                        style="font-size: 30px;color: #205eda;"></i>
+                    <i class="fa-brands fa-twitter fa-shake " style="font-size: 30px; color: #0696fd;"></i>
+                    <i class="fa-brands fa-tiktok fa-fade " style="font-size: 30px;color: black;"></i>
+                    <i class="fa-brands fa-youtube fa-bounce " style="font-size: 30px;color: red;"></i>
+                </div>>
+            </section>
 
         </section>
+    </div>
 
 
 
 
-    </section>
+
+
+
 
 
     <script src="./home.js"></script>

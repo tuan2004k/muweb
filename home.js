@@ -36,3 +36,28 @@ menuBtn.addEventListener("click", function () {
 
 
 
+
+const loginForm = document.getElementById('login-form');
+const contentElement = document.querySelector('.content');
+
+loginForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Ngăn chặn hành động mặc định của form
+
+  const username = loginForm.elements.username.value;
+  const password = loginForm.elements.password.value;
+
+  // Kiểm tra tên đăng nhập và mật khẩu
+  if (password.length < 8) {
+    alert('Mật khẩu phải có ít nhất 8 ký tự.');
+  } else if (!password.match(/[A-Z]/)) {
+    alert('Mật khẩu phải có ít nhất một chữ cái viết hoa.');
+  } else if (!password.match(/[a-z]/)) {
+    alert('Mật khẩu phải có ít nhất một chữ cái viết thường.');
+  } else if (!password.match(/[0-9]/)) {
+    alert('Mật khẩu phải có ít nhất một chữ số.');
+  } else {
+    // Nếu đăng nhập thành công:
+    loginForm.style.display = 'none'; // Ẩn form đăng nhập
+    contentElement.style.display = 'block'; // Hiển thị nội dung
+  }
+});
