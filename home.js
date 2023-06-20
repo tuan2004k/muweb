@@ -61,4 +61,7 @@ loginForm.addEventListener('submit', function(event) {
     contentElement.style.display = 'block'; // Hiển thị nội dung
   }
 });
-
+const createAccountBtn = loginForm.querySelector('.form-auth-new-creater button');
+createAccountBtn.addEventListener('click', function(event) {
+  event.preventDefault(); 
+});
