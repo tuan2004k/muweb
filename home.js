@@ -37,7 +37,7 @@ menuBtn.addEventListener("click", function () {
 
 
 
-const loginForm = document.getElementById('login-form');
+const loginForm = document.getElementById('modal');
 const contentElement = document.querySelector('.content');
 
 loginForm.addEventListener('submit', function(event) {
@@ -61,3 +61,4 @@ loginForm.addEventListener('submit', function(event) {
     contentElement.style.display = 'block'; // Hiển thị nội dung
   }
 });
+

@@ -19,16 +19,61 @@
 </head>
 
 <body>
-    <form id="login-form">
-        <div for="username">Tên đăng nhập:</div>
+    <!-- <form id="login-form">
+        <div class="username">Tên đăng nhập:</div>
         <input type="text" id="username" name="username" required>
 
-        <div for="password">Mật khẩu:</div>
+        <div class="password">Mật khẩu:</div>
         <input type="password" id="password" name="password" required>
 
         <button type="submit">Đăng nhập</button>
 
+    </form> -->
+
+      <form id="modal">
+        <div class="modal-overlay">
+            <img src="./image/nền.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="modal-body">
+            <div class="form-auth">
+                <div class="form-auth-container">
+                    <div class="form-auth-header">
+                        <h3 class="form-auth-heading">CHÀO MỪNG ĐẾN VỚI NHÀ HÁT CỦA NHỮNG GIẤC MƠ</h3>
+                    </div>
+                    <div class="form-auth-form">
+                        <div class="form-auth-content">
+                            <input type="text" name="username" class="form-auth-input" placeholder="Email hoặc số điện thoại">
+                        </div>
+                    </div>
+                    <div class="form-auth-group">
+                        <div class="form-auth-content">
+                            <input type="password" name="password" class="form-auth-input" placeholder="Mật khẩu">
+                        </div>
+                    </div>
+                    <div class="form-auth-login">
+                        <button type="submit">
+                            Đăng nhập
+                        </button>
+                    </div>
+                    <div class="form-auth-link-forgot">
+                        <a href="">Quên tài khoản</a>
+                    </div>
+                    <div class="form-auth-and">
+                        <span class="and">
+                            <!-- hoặc -->
+                        </span>
+                    </div>
+                    <div class="form-auth-new-creater">
+                        <button class="btn-new-lis">
+                            Tạo tài khoản mới
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
+
+
     <div class="content" style="display:none;">
         <section class="content-container">
 
