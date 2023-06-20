@@ -139,7 +139,7 @@ html {
     color: #f40000;
     padding-top: 20px;
     text-shadow: 0 0 4px #fff;
-    
+
     text-align: center;
 
 }
@@ -754,9 +754,9 @@ body {
     width: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding-left: 55px;
-
+    padding-top: 40px;
+   
 }
 
 .embrace-coach {
@@ -797,7 +797,7 @@ body {
 .name-coach {
     font-size: 40px;
     font-weight: 500;
-
+    padding: 60px 0px;
     color: #fff;
     text-shadow: 0 0 3px #fff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -822,8 +822,8 @@ body {
 }
 
 .img-coach img {
-    width: 140%;
-    height: 97%;
+     width: 130%;
+    height: 91%;
     align-self: flex-end;
 }
 
@@ -873,6 +873,7 @@ body {
 .profile-content {
     font-size: 16px;
     font-style: italic;
+    padding: 20px 0;
     color: #dfd6d5;
     text-shadow: 0 0 10px #e8e6e6;
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
@@ -914,6 +915,7 @@ body {
         -1px 1px 0 #ffffff,
         1px 1px 0 #ffffff;
     text-decoration: underline;
+    padding: 10px;
 
 }
 
@@ -940,7 +942,7 @@ body {
 .items-date {
     font-size: 24px;
     text-shadow: 0 0 5px #cdc0c0;
-    margin: 16px;
+   
     /* text-transform: cap
     italize;  */
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
